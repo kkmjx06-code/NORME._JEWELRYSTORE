@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NORME. — Less, but distinctive. Sculptural sterling silver jewelry.">
+  <title>NORME. | Jewelry Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">COMPLIMENTARY SHIPPING ON ORDERS OVER ₩100,000</div>
+  <header class="site-header">
+    <button class="icon-btn menu-toggle" id="menuToggle" aria-label="메뉴 열기">☰</button>
+    <a class="wordmark" href="#" aria-label="NORME 홈">NORME.</a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#shop">SHOP</a><a href="#story">ABOUT</a><a href="#footer">CONTACT</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="검색">⌕</button>
+      <button class="icon-btn" id="accountBtn" aria-label="마이페이지">♙</button>
+      <button class="icon-btn bag-button" id="cartBtn" aria-label="장바구니">BAG <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="NORME 캠페인">
+      <div class="hero-slides">
+        <div class="hero-slide active"><img src="img/hero-1.png" alt="NORME 실버 주얼리를 착용한 모델 캠페인"><div class="hero-copy"><span>COLLECTION 001 — 925 STERLING SILVER</span><h1>THE BEAUTY<br>OF FORM.</h1><a class="text-link light" href="#shop">DISCOVER THE COLLECTION ↗</a></div></div>
+        <div class="hero-slide"><img src="img/hero-2.png" alt="실버 목걸이와 귀걸이를 착용한 모델"><div class="hero-copy"><span>LESS, BUT DISTINCTIVE.</span><h1>FORM<br>IN BALANCE.</h1><a class="text-link light" href="#shop">SHOP THE EDIT ↗</a></div></div>
+        <div class="hero-slide"><img src="img/hero-3.png" alt="실버 주얼리 스타일링 화보"><div class="hero-copy"><span>AN OBJECT TO KEEP</span><h1>QUIETLY<br>DEFINED.</h1><a class="text-link light" href="#shop">EXPLORE NORME ↗</a></div></div>
+        <div class="hero-slide"><img src="img/hero-4.png" alt="실버 반지와 팔찌 디테일 화보"><div class="hero-copy"><span>925 STERLING SILVER</span><h1>MADE TO<br>BE YOURS.</h1><a class="text-link light" href="#shop">VIEW ALL PIECES ↗</a></div></div>
+      </div>
+      <div class="hero-bottom"><span>01 / 04</span><div class="hero-dots" id="heroDots"><button class="active" aria-label="슬라이드 1"></button><button aria-label="슬라이드 2"></button><button aria-label="슬라이드 3"></button><button aria-label="슬라이드 4"></button></div><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="intro section-wrap" id="story">
+      <p class="eyebrow">THE NORME. PHILOSOPHY</p>
+      <h2>Less, but<br><em>distinctive.</em></h2>
+      <p class="intro-text">불필요한 장식을 덜어내고 형태와 소재의 본질에 집중합니다.<br>일상의 균형을 완성하는 조형적인 실버 주얼리, NORME.</p>
+    </section>
+
+    <section class="shop-section section-wrap" id="shop">
+      <div class="section-heading"><div><p class="eyebrow">COLLECTION 001</p><h2>Selected pieces</h2></div><span class="muted">TIMELESS FORM, EVERYDAY OBJECTS</span></div>
+      <div class="shop-tools">
+        <div class="filters" id="filters"><button class="filter active" data-category="All">ALL</button><button class="filter" data-category="Ring">RING</button><button class="filter" data-category="Necklace">NECKLACE</button><button class="filter" data-category="Bracelet">BRACELET</button></div>
+        <div class="search-wrap" id="searchWrap"><input id="searchInput" type="search" placeholder="상품명 검색" aria-label="상품명 검색"></div>
+        <select id="sortSelect" aria-label="상품 정렬"><option value="default">추천순</option><option value="low">낮은 가격순</option><option value="high">높은 가격순</option></select>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="editorial">
+      <img src="img/hero-3.png" alt="NORME 실버 주얼리 에디토리얼">
+      <div><p class="eyebrow">MATERIAL / FORM / BALANCE</p><h2>Objects<br>of permanence.</h2><p>오래 곁에 두고 싶은 단순한 형태.<br>시간이 지나도 자연스럽게 어울리는 실버 피스.</p><a href="#shop" class="text-link">EXPLORE THE COLLECTION ↗</a></div>
+    </section>
+
+    <section class="newsletter section-wrap"><p class="eyebrow">STAY IN FORM</p><h2>Receive the NORME. edit.</h2><p>새로운 컬렉션과 브랜드 소식을 가장 먼저 만나보세요.</p><form id="newsletterForm"><input type="email" placeholder="EMAIL ADDRESS" required><button type="submit">SUBSCRIBE ↗</button></form></section>
+  </main>
+
+  <footer id="footer"><a class="wordmark" href="#">NORME.</a><p>LESS, BUT DISTINCTIVE.</p><div class="footer-links"><a href="#shop">SHOP</a><a href="#story">ABOUT</a><a href="mailto:hello@norme.example">CONTACT</a></div><small>© 2026 NORME. JEWELRY STORE. DEMO PROJECT.</small></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="장바구니"><div class="drawer-head"><h2>YOUR BAG</h2><button class="close-btn" data-close>×</button></div><div id="cartItems"></div><div class="cart-total"><div><span>SUBTOTAL</span><strong id="cartTotal">₩0</strong></div><button class="primary-btn" id="checkoutBtn">체험 결제하기</button><p class="fine-print">실제 결제가 진행되지 않는 수업용 체험 주문입니다.</p></div></aside>
+
+  <section class="modal" id="productModal" aria-modal="true" role="dialog"><button class="modal-close" data-close>×</button><div id="productDetail"></div></section>
+  <section class="modal account-modal" id="accountModal" aria-modal="true" role="dialog"><button class="modal-close" data-close>×</button><div id="accountContent"></div></section>
+  <section class="modal checkout-modal" id="checkoutModal" aria-modal="true" role="dialog"><button class="modal-close" data-close>×</button><div id="checkoutContent"></div></section>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
